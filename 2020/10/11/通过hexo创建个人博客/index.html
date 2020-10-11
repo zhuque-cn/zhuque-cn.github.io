@@ -70,7 +70,7 @@
         <span class="post-meta-item-icon">
             <i class="ri-quill-pen-line"></i>
             <span class="post-meta-item-text"> Word count:</span>
-            <span class="post-count">540</span>
+            <span class="post-count">712</span>
         </span>
     </span>
 
@@ -115,6 +115,19 @@
 </blockquote>
 <h1 id="第七步-自定制博客主题"><a href="#第七步-自定制博客主题" class="headerlink" title="第七步 自定制博客主题"></a>第七步 自定制博客主题</h1><blockquote>
 <p>在github下载喜欢的主题 存放到本地blog下的themes目录下:<br>  · 切换到themes目录: cd themes<br>  · 下载主题: git clone <a target="_blank" rel="noopener" href="https://github.com/Shen-Yu/hexo-theme-ayer.git">https://github.com/Shen-Yu/hexo-theme-ayer.git</a> themes/ayer<br>  · 更改主题名: mv hexo-theme-butterfly butterfly<br> 修改配置文件:<br>  · 修改_config.yml : theme: ayer<br><img src="/2020/10/11/%E9%80%9A%E8%BF%87hexo%E5%88%9B%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/07.jpg"><br>更新blog的配置:<br>  · 本地更新并启动: hexo clean      hexo g      hexo s<br><img src="/2020/10/11/%E9%80%9A%E8%BF%87hexo%E5%88%9B%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/08.jpg"><br>  · 将blog推送到远端: hexo d<br><img src="/2020/10/11/%E9%80%9A%E8%BF%87hexo%E5%88%9B%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/09.jpg"></p>
+</blockquote>
+<hr>
+<h1 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h1><h3 id="问题1-通过浏览器访问https-github-io-时通过外网可以访问-但国内网络无法正常访问"><a href="#问题1-通过浏览器访问https-github-io-时通过外网可以访问-但国内网络无法正常访问" class="headerlink" title="问题1 通过浏览器访问https://*.github.io/ 时通过外网可以访问, 但国内网络无法正常访问"></a>问题1 通过浏览器访问https://*.github.io/ 时通过外网可以访问, 但国内网络无法正常访问</h3><blockquote>
+<p>内网访问显示结果<br><img src="/2020/10/11/%E9%80%9A%E8%BF%87hexo%E5%88%9B%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/12.jpg"></p>
+</blockquote>
+<h3 id="问题1解决办法如下"><a href="#问题1解决办法如下" class="headerlink" title="问题1解决办法如下:"></a>问题1解决办法如下:</h3><blockquote>
+<p>增加DNS服务器备用地址: 208.67.222.222<br><img src="/2020/10/11/%E9%80%9A%E8%BF%87hexo%E5%88%9B%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/13.jpg"></p>
+</blockquote>
+<h3 id="问题2-直接插入图片会存在问题-无法显示"><a href="#问题2-直接插入图片会存在问题-无法显示" class="headerlink" title="问题2 : 直接插入图片会存在问题, 无法显示"></a>问题2 : 直接插入图片会存在问题, 无法显示</h3><blockquote>
+<p>访问结果<br><img src="/2020/10/11/%E9%80%9A%E8%BF%87hexo%E5%88%9B%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/10.jpg"></p>
+</blockquote>
+<h3 id="问题2解决办法如下"><a href="#问题2解决办法如下" class="headerlink" title="问题2解决办法如下:"></a>问题2解决办法如下:</h3><blockquote>
+<p>· 修改根blog目录下的配置文件 : vim _config.yml   将post_asset_folder的赋值改为true<br>· 安装hexo-asset-image插件 : yarn add <a target="_blank" rel="noopener" href="https://github.com/CodeFalling/hexo-asset-image">https://github.com/CodeFalling/hexo-asset-image</a><br>· 完成上述操作在blog下创建博客会自动配套生成图片文件夹,将图片放置于其中即可<br><img src="/2020/10/11/%E9%80%9A%E8%BF%87hexo%E5%88%9B%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/11.jpg"></p>
 </blockquote>
  
       <!-- reward -->
